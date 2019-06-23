@@ -27,25 +27,25 @@ public class EmployeeController {
 	 private EmployeeRepository employeeRepository;
 
 	
-	@GetMapping("/employees")
+	@GetMapping
 	 public List<Employee> getAllEmployees() {
 	  return employeeRepository.findAll();
 	 }
 	
-	 @GetMapping("/employees/{id}")
+	 @GetMapping("/{id}")
 	 public ResponseEntity<Optional<Employee>> getEmployeeById(@PathVariable(value = "id") Long employeeId){
 	  Optional<Employee> employee = employeeRepository.findById(employeeId);
 	  return ResponseEntity.ok().body(employee);
 	 }
 	 
-	 @PostMapping("/employees")
+	 @PostMapping
 	 public Employee createEmployee(@Valid @RequestBody Employee employee) {
 	  return employeeRepository.save(employee);
 	 }
 	
-	 @DeleteMapping("/employees/{id}")
-	 public Map<String, Boolean> deleteEmployee(@RequestBody Employee employee){
-	  employeeRepository.delete(employee);
+	 @DeleteMapping("/{id}")
+	 public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long employeeId){
+	  employeeRepository.deleteById(employeeId);
 	  Map<String, Boolean> response = new HashMap<>();
 	  response.put("deleted", Boolean.TRUE);
 	  return response;
