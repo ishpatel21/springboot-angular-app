@@ -12,3 +12,5 @@ Start Application in local:
 	Run Frontend:
 		- Run 'npm install' command in src/main/ngapp folder
 		- then run 'ng serve --open' command in same folder
+
+![Screenshot](ScreenShot.png)
