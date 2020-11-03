@@ -1,6 +1,8 @@
 INTRODUCTION
 ------------
 
+Create/Read/Update/Delete Employee Application.
+
 Backend: Spring Boot 2.3.0 Application(JPA, Spring Security, H2-Console, Swagger UI, Lombok)
 
 FrontEnd: Angular 10.0 frontend(Primeng, Chart.JS)
