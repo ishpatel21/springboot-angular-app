@@ -3,5 +3,5 @@ export interface Employee{
 	firstName? : string;
 	lastName? : string;
     emailId? : string;
-
+    employeeType? : string;
 }

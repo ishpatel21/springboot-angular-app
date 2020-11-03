@@ -9,6 +9,7 @@ import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import {ChartModule} from 'primeng/chart';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ButtonModule } from 'primeng/button';
     DialogModule,
     InputTextModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    ChartModule
   ],
   providers: [EmployeeService],
   bootstrap: []
