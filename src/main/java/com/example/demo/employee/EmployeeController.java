@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -39,7 +37,7 @@ public class EmployeeController {
 	 }
 	 
 	 @PostMapping
-	 public Employee createEmployee(@Valid @RequestBody Employee employee) {
+	 public Employee createEmployee(@RequestBody Employee employee) {
 	  return employeeRepository.save(employee);
 	 }
 	
