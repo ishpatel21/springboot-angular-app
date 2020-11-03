@@ -1,7 +1,7 @@
 INTRODUCTION
 ------------
 
-Backend: Spring Boot 2.3.0 Application(JPA, H2, Lombok, Swagger, Spring Security)
+Backend: Spring Boot 2.3.0 Application(JPA, Spring Security, H2-Console, Swagger UI, Lombok)
 
 FrontEnd: Angular 10.0 frontend(Primeng, Chart.JS)
 
