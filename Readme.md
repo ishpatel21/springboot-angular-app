@@ -14,9 +14,15 @@ Start Application in local
 	Run backend on port 8080
 	
 	Run Frontend:
-		- Run 'npm install' command in src/main/ngapp folder
-		- then run 'ng serve --open' command in same folder
+		- Run 'npm install' in src/main/ngapp folder
+		- Then run 'ng serve --open' in same folder
 
+Test Cloud Config Server
+------------------
+
+	To test config server, go to http://localhost:8080/hello
+	(This will pull properties from config_props repo and read it into config_server repo. 
+	This application calls config_server to read those cloud properties.)
 
 ScreenShot
 ----------
